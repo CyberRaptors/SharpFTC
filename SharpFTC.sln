@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0C95BB6B-BF35-493A-911C-923383036EDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpFTC.Core", "src\SharpFTC.Core\SharpFTC.Core.csproj", "{43DC242E-F142-4006-A510-110BF1DDBBBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpFTC.OpModeGenerator", "src\SharpFTC.OpModeGenerator\SharpFTC.OpModeGenerator.csproj", "{36E5E7B9-93B4-4843-8E35-37A84C32E690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpFTC.Tool", "src\SharpFTC.Tool\SharpFTC.Tool.csproj", "{F69849FB-0A40-476D-ADC1-B6364B1665FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ftclibport", "ftclibport", "{E7E37F1C-7943-4A2D-9C87-3BE8343C7BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtcXamarinBindings", "ftclibport\FtcXamarinBindings\FtcXamarinBindings.csproj", "{2EA62D31-7870-458B-BA67-56B91ED659E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DC242E-F142-4006-A510-110BF1DDBBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DC242E-F142-4006-A510-110BF1DDBBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DC242E-F142-4006-A510-110BF1DDBBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DC242E-F142-4006-A510-110BF1DDBBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E5E7B9-93B4-4843-8E35-37A84C32E690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E5E7B9-93B4-4843-8E35-37A84C32E690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E5E7B9-93B4-4843-8E35-37A84C32E690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E5E7B9-93B4-4843-8E35-37A84C32E690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69849FB-0A40-476D-ADC1-B6364B1665FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69849FB-0A40-476D-ADC1-B6364B1665FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69849FB-0A40-476D-ADC1-B6364B1665FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69849FB-0A40-476D-ADC1-B6364B1665FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA62D31-7870-458B-BA67-56B91ED659E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA62D31-7870-458B-BA67-56B91ED659E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA62D31-7870-458B-BA67-56B91ED659E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA62D31-7870-458B-BA67-56B91ED659E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43DC242E-F142-4006-A510-110BF1DDBBBE} = {0C95BB6B-BF35-493A-911C-923383036EDD}
+		{36E5E7B9-93B4-4843-8E35-37A84C32E690} = {0C95BB6B-BF35-493A-911C-923383036EDD}
+		{F69849FB-0A40-476D-ADC1-B6364B1665FA} = {0C95BB6B-BF35-493A-911C-923383036EDD}
+		{2EA62D31-7870-458B-BA67-56B91ED659E2} = {E7E37F1C-7943-4A2D-9C87-3BE8343C7BE7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03078EEC-EA8D-4AF2-A54C-206476D056CE}
+	EndGlobalSection
+EndGlobal

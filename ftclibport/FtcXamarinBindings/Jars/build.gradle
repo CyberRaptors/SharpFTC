@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        // Note for FTC Teams: Do not modify this yourself.
+        classpath 'com.android.tools.build:gradle:8.7.0'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.7.0' apply true
+}
+
+android {
+    compileSdkVersion 33 // Update to your desired SDK version
+    defaultConfig {
+		namespace "com.sharpftc.sdkbindings"
+        applicationId "com.sharpftc.sdkbindings"
+        minSdkVersion 24
+        targetSdkVersion 28
+    }
+}
+
+repositories {
+    mavenCentral()
+    google() // Needed for androidx
+}
+
+configurations {
+    toCopy
+}
+
+dependencies {
+    toCopy 'org.firstinspires.ftc:Inspection:10.1.1'
+    toCopy 'org.firstinspires.ftc:Blocks:10.1.1'
+    toCopy 'org.firstinspires.ftc:RobotCore:10.1.1'
+    toCopy 'org.firstinspires.ftc:RobotServer:10.1.1'
+    toCopy 'org.firstinspires.ftc:OnBotJava:10.1.1'
+    toCopy 'org.firstinspires.ftc:Hardware:10.1.1'
+    toCopy 'org.firstinspires.ftc:FtcCommon:10.1.1'
+    toCopy 'org.firstinspires.ftc:Vision:10.1.1'
+    toCopy 'androidx.appcompat:appcompat:1.2.0'
+}
+
+
+task download(type: Copy) {
+    from configurations.toCopy 
+    into 'DownloadedArchives'
+}
