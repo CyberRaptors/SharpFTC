@@ -1,8 +1,0 @@
-mvn dependency:get -Dartifact=org.firstinspires.ftc:Inspection:10.1.1
-mvn dependency:get -Dartifact=org.firstinspires.ftc:Blocks:10.1.1
-mvn dependency:get -Dartifact=org.firstinspires.ftc:RobotCore:10.1.1
-mvn dependency:get -Dartifact=org.firstinspires.ftc:RobotServer:10.1.1
-mvn dependency:get -Dartifact=org.firstinspires.ftc:OnBotJava:10.1.1
-mvn dependency:get -Dartifact=org.firstinspires.ftc:Hardware:10.1.1
-mvn dependency:get -Dartifact=org.firstinspires.ftc:FtcCommon:10.1.1
-mvn dependency:get -Dartifact=org.firstinspires.ftc:Vision:10.1.1

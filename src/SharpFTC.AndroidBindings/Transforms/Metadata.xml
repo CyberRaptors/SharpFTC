@@ -1,0 +1,410 @@
+﻿<metadata>
+	<!--<remove-node path="/api/package[starts-with(@name, 'javax')]"></remove-node>
+	<remove-node path="/api/package[starts-with(@name, 'com.google')]"></remove-node>
+	<add-node path="/api/package[starts-with(@name, 'com.google.gson')]"></add-node>
+	<add-node path="/api/package[starts-with(@name, 'javax.tools')]"></add-node>-->
+
+
+	<!--<add-node path="/api/package[starts-with(@name, 'com.qualcomm')]/interface">
+		<attribute name="visibility">public</attribute>
+	</add-node>
+
+	<add-node path="/api/package[starts-with(@name, 'org.firstinspires.ftc')]/interface">
+		<attribute name="visibility">public</attribute>
+	</add-node>-->
+
+	<!--<attr
+		path="/api/package[@name='com.qualcomm.robotcore.hardware']/interface[@name='HardwareDevice']/method[@name='getManufacturer']"
+		name="managedName">Manufacturer</attr>-->
+	<remove-node path="/api/package[starts-with(@name, 'com.sun.tools')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'com.sun.source')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'org.firstinspires.ftc.ftccommon.internal.manualcontrol')]"/>
+	
+	<remove-node path="/api/package[@name='org.threeten.bp.chrono']/class[@name='ThaiBuddhistDate']/method[@name='plus' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='org.threeten.bp.temporal.TemporalUnit']]"/>
+	<remove-node path="/api/package[@name='org.threeten.bp.chrono']/class[@name='MinguoDate']/method[@name='plus' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='org.threeten.bp.temporal.TemporalUnit']]"/>
+	<remove-node path="/api/package[@name='org.threeten.bp.chrono']/class[@name='JapaneseDate']/method[@name='plus' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='org.threeten.bp.temporal.TemporalUnit']]"/>
+	<remove-node path="/api/package[@name='org.threeten.bp.chrono']/class[@name='HijrahDate']/method[@name='plus' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='org.threeten.bp.temporal.TemporalUnit']]"/>
+	<remove-node path="/api/package[@name='org.threeten.bp.temporal']/interface[@name='Temporal']/method[@name='plus' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='org.threeten.bp.temporal.TemporalUnit']]"/>
+	<remove-node path="/api/package[@name='org.threeten.bp.temporal']/interface[@name='Temporal']/method[@name='with' and count(parameter)=2 and parameter[1][@type='org.threeten.bp.temporal.TemporalField'] and parameter[2][@type='long']]"/>
+	<remove-node path="/api/package[@name='javax.tools']/interface[@name='JavaCompiler.CompilationTask']/method[@name='setProcessors' and count(parameter)=1 and parameter[1][@type='java.lang.Iterable&lt;? extends javax.annotation.processing.Processor&gt;']]"/>
+	<remove-node path="/api/package[@name='com.qualcomm.robotcore.util']/class[@name='ThreadPool.RecordingThreadPool']/method[@name='iterator' and count(parameter)=0]"/>
+	<remove-node path="/api/package[@name='com.qualcomm.robotcore.util']/class[@name='ThreadPool.RecordingScheduledExecutor']/method[@name='iterator' and count(parameter)=0]"/>
+	<remove-node path="/api/package[starts-with(@name, 'androidx')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'org.firstinspires.ftc.robotcore.internal')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'com.google.zxing')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'com.google.blocks')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'com.journeyapps.barcodescanner')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'javax')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'org.threeten.bp')]"/>
+	<remove-node path="/api/package[@name='org.slf4j.impl']"/>
+	<remove-node path="/api/package[@name='com.google.gson.typeadapters']"/>
+	<remove-node path="/api/package[starts-with(@name, 'com.google.gson.internal')]"/>
+	<remove-node />
+	<remove-node />
+
+	<attr  path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='withEarlierOffsetAtOverlap']" name="managedOverride">
+		override
+	</attr>
+	
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='toLocalDateTime']" name="managedOverride">
+		override
+	</attr>
+	
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='atZone']" name="managedOverride">
+		override
+	</attr>
+	
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='withLaterOffsetAtOverlap']" name="managedOverride">
+		override
+	</attr>
+	
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='withLaterOffsetAtOverlap']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='withZoneSameInstant']" name="managedOverride">
+		override
+	</attr>
+	
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='withLaterOffsetAtOverlap']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='plus']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='plus']" name="managedReturn">
+		Org.Threeten.BP.Temporal.ITemporal
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='with']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='with']" name="managedReturn">
+		Org.Threeten.BP.Temporal.ITemporal
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='withZoneSameLocal']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class/method[@name='resolveDate']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class/method[@name='eraOf']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class/method[@name='dateYearDay']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class/method[@name='date']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class/method[@name='date']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class/method[@name='dateEpochDay']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='com.google.zxing.client.result']/class/method[@name='parse']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='com.google.zxing.client.result']/class[@name='ResultParser']/method[@name='parse' and count(parameter)=1 and parameter[1][@type='com.google.zxing.Result']]" name="managedOverride">
+		
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='minus']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.threeten.bp')]/class/method[@name='minus']" name="managedReturn">
+		Org.Threeten.BP.Temporal.ITemporal
+	</attr>
+
+	<attr path="/api/package[@name='org.java_websocket.server']/class/method[@name='createWebSocket']" name="managedReturn">
+		Org.JavaWebSocket.IWebSocket
+	</attr>
+
+	<attr path="/api/package[@name='javax.tools']/interface[@name='JavaCompiler.CompilationTask']/method[@name='call' and count(parameter)=0]" name="managedReturn">
+		Java.Lang.Object
+	</attr>
+
+	<attr path="/api/package[@name='javax.tools']/interface[@name='DocumentationTool.DocumentationTask']/method[@name='call' and count(parameter)=0]" name="managedReturn">
+		Java.Lang.Object
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'org.firstinspires.ftc.robotcore.internal.camera')]//method[@name='nameFromCameraDirection']" name="managedReturn">
+		Org.Firstinspires.Ftc.Robotcore.External.Hardware.Camera.ICameraName
+	</attr>
+	
+	<attr path="/api/package[starts-with(@name, 'org.firstinspires.ftc.robotcore.internal.camera')]//method[@name='getCameraName']" name="managedReturn">
+		Org.Firstinspires.Ftc.Robotcore.External.Hardware.Camera.ICameraName
+	</attr>
+	
+	<attr path="/api/package[@name='androidx.lifecycle']/interface[@name='LifecycleRegistryOwner']/method[@name='getLifecycle' and count(parameter)=0]" name="managedReturn">
+		Androidx.Lifecycles.Lifecycle
+	</attr>
+	
+	<attr path="/api/package[starts-with(@name, 'com.qualcomm.robotcore.hardware')]/class[@name='HardwareDevice.Manufacturer']" name="managedName">
+		ManufacturerType
+	</attr>
+
+	<attr path="/api/package[starts-with(@name, 'com.qualcomm.robotcore.hardware')]/class[@name='HardwareDeviceHealth.HealthStatus']" name="managedName">
+		DeviceHealthStatus
+	</attr>
+
+
+	<attr path="/api/package[@name='com.google.gson']/class[@name='JsonStreamParser']/method[@name='next' and count(parameter)=0]" name="managedReturn">
+		Java.Lang.Object
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class[@name='Chronology']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class[@name='ChronoLocalDate']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class[@name='ChronoLocalDateTime']/method" name="managedOverride">
+		none
+	</attr>
+	
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class[@name='ChronoZonedDateTime']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.chrono']/class[@name='ChronoPeriod']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='YearMonth']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class/method[@name='isSupported']" name="managedOverride">
+		override
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class/method[@name='getLong']" name="managedOverride">
+		override
+	</attr>
+	
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='Year']/method" name="managedOverride">
+		none
+	</attr>
+	
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='DayOfWeek']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='Duration']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='Instant']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='LocalTime']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='Month']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='MonthDay']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='OffsetTime']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp']/class[@name='OffsetDateTime']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.threeten.bp.jdk8']/class[@name='DefaultInterfaceTemporal']/method" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='org.firstinspires.ftc.vision']/class[@name='VisionPortalImpl']/method[@name='getFrameBitmap']" name="managedOverride">
+		none
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='PwmControl.PwmRange']" name="managedName">
+		PwmRangeInfo
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='Servo.Direction']" name="managedName">
+		ServoDirection
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.broadcom']/class[@name='BroadcomColorSensor.Parameters']" name="managedName">
+		Params
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.eventloop']/class[@name='SyncdDevice.ShutdownReason']" name="managedName">
+		ReasonForShutdown
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.digitalchickenlabs']/class[@name='OctoQuadBase.I2cRecoveryMode']" name="managedName">
+		I2cDeviceRecoveryMode
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.digitalchickenlabs']/class[@name='OctoQuadBase.ChannelBankConfig']" name="managedName">
+		ChannelBankConf
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.digitalchickenlabs']/class[@name='OctoQuadBase.FirmwareVersion']" name="managedName">
+		FirmwareVersionInfo
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='IrSeekerSensor.Mode']" name="managedName">
+		SensorMode
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='ServoController.PwmStatus']" name="managedName">
+		PwmStatusInfo
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.ams']/class[@name='AMSColorSensor.Parameters']" name="managedName">
+		Params
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.bosch']/class[@name='BNO055IMU.Parameters']" name="managedName">
+		Params
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='I2cDeviceSynch.ReadWindow']" name="managedName">
+		ReadWindowInfo
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='I2cDeviceSynch.HeartbeatAction']" name="managedName">
+		DeviceHeartbeatAction
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='DigitalChannel.Mode']" name="managedName">
+		ChannelMode
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='DcMotorSimple.Direction']" name="managedName">
+		MotorDirection
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.digitalchickenlabs']/class[@name='OctoQuad.FirmwareVersion']" name="managedName">
+		FirmwareVersionInfo
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='DcMotor.ZeroPowerBehavior']" name="managedName">
+		ZeroPowerAction
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.bosch']/class[@name='BNO055IMU.SystemStatus']" name="managedName">
+		SystemStatusInfo
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.bosch']/class[@name='BNO055IMU.SystemError']" name="managedName">
+		SystemErrorInfo
+	</attr>
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.bosch']/class[@name='BNO055IMU.CalibrationStatus']" name="managedName">
+		CalibrationStatusInfo
+	</attr>
+
+	<attr path="/api/package[@name='org.firstinspires.ftc.robotserver.internal.webserver.websockets.tootallnate']/class[@name='TooTallWebSocket']/method[@name='send' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="visibility">
+		protected
+	</attr>
+
+	<attr path="/api/package[@name='org.firstinspires.ftc.robotserver.internal.webserver.websockets.tootallnate']/class[@name='TooTallWebSocket']/method[@name='close' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.String']]" name="visibility">
+		protected
+	</attr>
+
+
+	<attr path="/api/package[@name='org.firstinspires.ftc.robotserver.internal.webserver']/class[@name='RobotControllerWebHandlers.FileDownload']/method[@name='getResponse' and count(parameter)=2 and parameter[1][@type='fi.iki.elonen.NanoHTTPD.IHTTPSession'] and parameter[2][@type='java.lang.String']]" name="visibility">
+		protected
+	</attr>
+
+
+	<attr path="/api/package[@name='org.firstinspires.ftc.robotserver.internal.webserver']/class[@name='RobotControllerWebHandlers.ClientPing']/method[@name='getResponse' and count(parameter)=2 and parameter[1][@type='fi.iki.elonen.NanoHTTPD.IHTTPSession'] and parameter[2][@type='java.lang.String']]" name="visibility">
+		protected
+	</attr>
+
+
+	<attr path="/api/package[@name='com.qualcomm.hardware.lynx']/class[@name='LynxI2cDeviceSynch']/method[@name='isArmed' and count(parameter)=0]" name="visibility">
+		protected
+	</attr>
+
+
+	<attr path="/api/package[@name='org.opencv.android']/class[@name='CameraRenderer']/method[@name='setCameraPreviewSize' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='int']]" name="visibility">
+		protected
+	</attr>
+
+
+	<attr path="/api/package[starts-with(@name, 'com.qualcomm')]/class/method[@name='setI2cAddress']" name="propertyName"></attr>
+	<attr path="/api/package[starts-with(@name, 'com.qualcomm')]/interface/method[@name='setI2cAddress']" name="propertyName"></attr>
+
+	<attr 
+		path="/api/package[@name='org.firstinspires.ftc.robotcore.internal.ui']/class[@name='InputManager']/field[@name='inputManager']"
+		name="managedName">InputMgr</attr>
+
+	<attr
+		path="/api/package[@name='org.firstinspires.ftc.robotcore.internal.opmode']/class[@name='TelemetryImpl.Value']/field[@name='value']"
+		name="managedName">InnerValue</attr>
+
+	<attr
+		path="/api/package[@name='org.firstinspires.ftc.robotcore.external.navigation']/class[@name='Temperature']/field[@name='temperature']"
+		name="managedName">Temp</attr>
+
+
+	<attr path="//method[starts-with(@name, 'on')]" name="eventName"></attr>
+	
+	
+	<!-- TEMP BELOW: MUST REWRITE IN C# WITH GENERICS -->
+
+	<remove-node path="/api/package[@name='com.qualcomm.robotcore.util']/class[@name='ThreadPool']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.robotcore.hardware']/class[@name='ScannedDevices.MapAdapter']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.rev']/class[@name='Rev9AxisImu']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.kauailabs']/class[@name='NavxMicroNavigationSensor']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.lynx']/class[@name='LynxI2cDeviceSynch']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.lynx']/class[@name='LynxI2cColorRangeSensor']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.lynx']/class[@name='LynxEmbeddedIMU']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.robotcore.hardware.configuration']/class[@name='BuiltInConfigurationTypeJsonAdapter']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.broadcom']/class[@name='BroadcomColorSensorImpl']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.bosch']/class[@name='BHI260IMU']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.ams']/class[@name='AMSColorSensorImpl']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.adafruit']/class[@name='AdafruitI2cColorSensor']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.adafruit']/class[@name='AdafruitBNO055IMUNew']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.adafruit']/class[@name='AdafruitBNO055IMU']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.lynx']/class[@name='LynxEmbeddedBNO055IMUNew']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.bosch']/class[@name='BNO055IMUImpl']"/>
+	<remove-node path="/api/package[@name='org.firstinspires.ftc.vision']/class[@name='VisionPortal']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.broadcom']/interface[@name='BroadcomColorSensor']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.robotcore.hardware']/interface[@name='ColorRangeSensor']"/>
+	<remove-node path="/api/package[@name='com.qualcomm.hardware.ams']/interface[@name='AMSColorSensor']"/>
+	<remove-node/>
+	<remove-node path="/api/package[@name='org.opencv.android']"/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+	<remove-node/>
+</metadata>

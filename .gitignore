@@ -1,2 +1,5 @@
 bin/
 obj/
+.filenesting.json
+.vs
+Backup
