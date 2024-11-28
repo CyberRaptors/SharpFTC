@@ -7,12 +7,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <AndroidLibrary Remove="GradleBuild\DownloadedArchives\activity-1.0.0.aar" />
     <AndroidLibrary Remove="GradleBuild\DownloadedArchives\appcompat-1.2.0.aar" />
     <AndroidLibrary Remove="GradleBuild\DownloadedArchives\appcompat-resources-1.2.0.aar" />
     <AndroidLibrary Remove="GradleBuild\DownloadedArchives\r8-8.5.35.jar" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="GradleBuild\DownloadedArchives\activity-1.0.0.aar" />
     <None Remove="GradleBuild\DownloadedArchives\annotation-1.2.0.jar" />
     <None Remove="GradleBuild\DownloadedArchives\apriltag-2.1.0.aar" />
     <None Remove="GradleBuild\DownloadedArchives\base45-0.0.3.jar" />

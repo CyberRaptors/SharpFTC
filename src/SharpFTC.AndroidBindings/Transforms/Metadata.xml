@@ -30,7 +30,6 @@
 	<remove-node path="/api/package[@name='com.qualcomm.robotcore.util']/class[@name='ThreadPool.RecordingThreadPool']/method[@name='iterator' and count(parameter)=0]"/>
 	<remove-node path="/api/package[@name='com.qualcomm.robotcore.util']/class[@name='ThreadPool.RecordingScheduledExecutor']/method[@name='iterator' and count(parameter)=0]"/>
 	<remove-node path="/api/package[starts-with(@name, 'androidx')]"/>
-	<remove-node path="/api/package[starts-with(@name, 'org.firstinspires.ftc.robotcore.internal')]"/>
 	<remove-node path="/api/package[starts-with(@name, 'com.google.zxing')]"/>
 	<remove-node path="/api/package[starts-with(@name, 'com.google.blocks')]"/>
 	<remove-node path="/api/package[starts-with(@name, 'com.journeyapps.barcodescanner')]"/>
@@ -39,6 +38,22 @@
 	<remove-node path="/api/package[@name='org.slf4j.impl']"/>
 	<remove-node path="/api/package[@name='com.google.gson.typeadapters']"/>
 	<remove-node path="/api/package[starts-with(@name, 'com.google.gson.internal')]"/>
+	<remove-node path="/api/package[@name='org.firstinspires.ftc.robotcore.internal.network']/class[@name='ApChannel']"/>
+	<remove-node path="/api/package[starts-with(@name, 'org.firstinspires.ftc.robotcore.internal')]"/>
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
+	<remove-node />
 	<remove-node />
 	<remove-node />
 
@@ -407,4 +422,8 @@
 	<remove-node/>
 	<remove-node/>
 	<remove-node/>
+	
+	
+	<!-- For Adding OpModes via C# -->
+
 </metadata>
