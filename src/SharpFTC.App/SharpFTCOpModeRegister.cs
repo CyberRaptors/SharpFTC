@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace SharpFTC.App
 {
-    public class FTCSharpOpModeRegister
+    public class SharpFTCOpModeRegister
     {
         const string SearchExternalOpModeAssembliesConfigPropertyName = "UseExternalAssemblies";
 
-        [Export("RegisterFTCSharpOpModes")]
-        public static void RegisterFTCSharpOpModes(nint opModeManager)
+        [Export("registerSharpFTCOpModes")]
+        public static void RegisterSharpFTCOpModes(nint opModeManager)
         {
             var configClass = GetConfigClass();
 

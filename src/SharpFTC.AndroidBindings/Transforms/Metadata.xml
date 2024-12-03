@@ -29,7 +29,7 @@
 	<remove-node path="/api/package[@name='javax.tools']/interface[@name='JavaCompiler.CompilationTask']/method[@name='setProcessors' and count(parameter)=1 and parameter[1][@type='java.lang.Iterable&lt;? extends javax.annotation.processing.Processor&gt;']]"/>
 	<remove-node path="/api/package[@name='com.qualcomm.robotcore.util']/class[@name='ThreadPool.RecordingThreadPool']/method[@name='iterator' and count(parameter)=0]"/>
 	<remove-node path="/api/package[@name='com.qualcomm.robotcore.util']/class[@name='ThreadPool.RecordingScheduledExecutor']/method[@name='iterator' and count(parameter)=0]"/>
-	<remove-node path="/api/package[starts-with(@name, 'androidx')]"/>
+	<remove-node path="/api/package[starts-with(@name, 'android')]"/>
 	<remove-node path="/api/package[starts-with(@name, 'com.google.zxing')]"/>
 	<remove-node path="/api/package[starts-with(@name, 'com.google.blocks')]"/>
 	<remove-node path="/api/package[starts-with(@name, 'com.journeyapps.barcodescanner')]"/>
