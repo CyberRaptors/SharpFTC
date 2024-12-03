@@ -2,18 +2,13 @@
 using Java.Interop;
 using SharpFTC.Core.Attributes;
 using SharpFTC.Core.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SharpFTC.App
 {
     public class SharpFTCOpModeRegister
     {
-        const string SearchExternalOpModeAssembliesConfigPropertyName = "UseExternalAssemblies";
+        const string SearchExternalOpModeAssembliesConfigPropertyName = "UseAssemblies";
 
         [Export("registerSharpFTCOpModes")]
         public static void RegisterSharpFTCOpModes(nint opModeManager)
@@ -26,13 +21,13 @@ namespace SharpFTC.App
             {
                 foreach (var type in asm.GetTypes())
                 {
-                    if (type.GetCustomAttribute<TeleOpAttribute>() is TeleOpAttribute teleOpAttr) RegisterOpMode(teleOpAttr.Name!, teleOpAttr.Group!, false);
-                    else if (type.GetCustomAttribute<AutonomousAttribute>() is AutonomousAttribute autonAttr) RegisterOpMode(autonAttr.Name!, autonAttr.Group!, true);
+                    if (type.GetCustomAttribute<TeleOpAttribute>() is TeleOpAttribute teleOpAttr) RegisterOpMode(opModeManager, teleOpAttr.Name!, teleOpAttr.Group!, false);
+                    else if (type.GetCustomAttribute<AutonomousAttribute>() is AutonomousAttribute autonAttr) RegisterOpMode(opModeManager, autonAttr.Name!, autonAttr.Group!, true);
                 }
             }
         }
 
-        static void RegisterOpMode(string name, string group, bool autonomous)
+        static void RegisterOpMode(nint opModeManager, string name, string group, bool autonomous)
         {
 
         }
