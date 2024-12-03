@@ -56,9 +56,9 @@ namespace SharpFTC.App
 
         static IEnumerable<Assembly> GetSearchAssemblies(Type configClass)
         {
-            var searchAsmNames = (IEnumerable<string>) configClass.GetField(SearchExternalOpModeAssembliesConfigPropertyName, BindingFlags.Static | BindingFlags.Public)!.GetValue(null)!;
+            var searchAsmNames = (IEnumerable<Assembly>) configClass.GetField(SearchExternalOpModeAssembliesConfigPropertyName, BindingFlags.Static | BindingFlags.Public)!.GetValue(null)!;
 
-            return AppDomain.CurrentDomain.GetAssemblies().Where(asm => searchAsmNames.Contains(asm.GetName().Name)).Append(configClass.Assembly);
+            return searchAsmNames.Append(configClass.Assembly);
         }
     }
 }
