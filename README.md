@@ -2,7 +2,11 @@
 
 SharpFTC allows teams and developers to communicate with the First Tech Challenge Robot Controller interface using C# and the .NET runtime. This repository contains the libraries needed for SharpFTC; the actual quickstart project can be found at [](not_added_yet).
 
-Currently still under heavy testing. If something breaks, please report it as a Github issue.
+**NOTE: THIS PROJECT IS STILL UNDER PRELIMINARY DEVELOPMENT AND CURRENTLY DOES NOT CONTAIN THE FUNCTIONALITY TO EXECUTE BASIC OPMODES**
+
+Currently **untested**. If something breaks, please report it as a Github issue. Contributing by running tests on real FTC robots and environments is encouraged and is a huge help to the project.
+
+Notes on contributing via pull requests will be published once the project's core functionality is implemented.
 
 ## Components
 
