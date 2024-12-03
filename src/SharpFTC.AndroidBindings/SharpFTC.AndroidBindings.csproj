@@ -11,6 +11,44 @@
     <AndroidLibrary Remove="GradleBuild\DownloadedArchives\appcompat-1.2.0.aar" />
     <AndroidLibrary Remove="GradleBuild\DownloadedArchives\appcompat-resources-1.2.0.aar" />
     <AndroidLibrary Remove="GradleBuild\DownloadedArchives\r8-8.5.35.jar" />
+
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\annotation-1.2.0.jar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\apriltag-2.1.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\base45-0.0.3.jar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\Blocks-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\collection-1.1.0.jar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\core-1.3.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\core-3.4.1.jar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\core-common-2.1.0.jar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\core-runtime-2.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\cursoradapter-1.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\customview-1.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\drawerlayout-1.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\easyopencv-1.7.3.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\fragment-1.1.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\FtcCommon-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\Hardware-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\Inspection-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\interpolator-1.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\lifecycle-common-2.1.0.jar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\lifecycle-livedata-2.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\lifecycle-livedata-core-2.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\lifecycle-runtime-2.1.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\lifecycle-viewmodel-2.1.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\loader-1.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\OnBotJava-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\opencv-repackaged-bundled-dylibs-4.10.0-A.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\RobotCore-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\RobotServer-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\savedstate-1.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\threetenabp-1.3.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\threetenbp-1.5.1-no-tzdb.jar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\vectordrawable-1.1.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\vectordrawable-animated-1.1.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\versionedparcelable-1.1.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\viewpager-1.0.0.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\Vision-10.1.1.aar" />
+    <AndroidLibrary Include="GradleBuild\DownloadedArchives\zxing-android-embedded-4.3.0.aar" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="GradleBuild\DownloadedArchives\annotation-1.2.0.jar" />
